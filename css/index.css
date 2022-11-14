@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(../img/banner.png);
+    background-position:  center center;
+    background-size: cover;
+    position: relative;
+
+}
+.menu{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.menu nav ul {
+    list-style: none;
+}
+.menu nav ul li {
+    display: inline-block;
+    margin: 10px;
+    transition: 0.5s ease 0s;
+}
+.menu nav ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color:#ffff;
+    text-transform: capitalize;
+    position: relative;
+}
+.menu nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: darkorange;
+    left: 0;
+    bottom: -3px;
+    border-radius: 0 20px 20px 0;
+    transition: 0.5s ease 0s;
+}
+.menu nav ul li:hover a::after {
+    width: 100%;
+}
+.cent{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+
+}
+.cent h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #ffff;
+}
+.cent p{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+    word-break: break-all;
+}
+.cent button {
+    background-color: transparent;
+    border: 1px solid #ffff;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s ease 0s;
+}
+.cent button::after{
+    content: "";
+    position: absolute;
+    height:30px;
+    width: 1px;
+    background-color: #ffff;
+    top: 30%;
+    left: -5px;
+    transform: rotate(90deg) ;
+}
+.cent button::before{
+    content: "";
+    position: absolute;
+    height:30px;
+    width: 1px;
+    background-color: #ffff;
+    top: 30%;
+    right: -5px;
+    transform: rotate(90deg) ;
+}
+.cent button:hover{
+    background-color:rgb(255, 140, 0);
+}
+
+.cont2{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    clear: both;
+    padding: 20px 0 ;
+}
+.title h3{
+    font-size: 40px;
+    text-transform: capitalize;
+
+}
+.title p{
+    font-size: 13px;
+    font-style: italic;
+}
+.allarticl1 ,.allartic2,.allartic3{
+    width: 90%;
+    margin: 20px auto;
+   display: flex;
+   align-content: center;
+}
+
+.art1{
+    margin: 20px;
+    background-color: #fff3f3;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.5s ease 0s;
+
+}
+
+.art1 h3{
+    text-align: center;
+    padding: 10px  20px 20px 30px;
+    text-transform: capitalize;
+}
+.art1 p::first-letter{
+    padding : 0 0 0 20px ;
+    font-style: italic;
+}
+.art1:hover {
+    box-shadow: -4px 14px 15px 3px rgba(140,140,140,0.75);
+-webkit-box-shadow: -4px 14px 15px 3px rgba(140,140,140,0.75);
+-moz-box-shadow: -4px 14px 15px 3px rgba(140,140,140,0.75);
+cursor: pointer;
+
+}
+
+
+.art2{
+    
+   margin-left: 30px;
+   width: calc(90% / 3);
+   position: relative;
+
+}
+.layer{
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    border-radius: 20px;
+
+}
+.layer:hover{
+    background:rgba(226,0,0,0.7);
+    height: 100%;
+
+}
+
+.art2 img{
+    height:450px ;
+    border-radius: 20px;
+}
+
+.art2 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    transform: translate(-50% , -50%);
+    text-transform: capitalize;   
+}
+.art3{
+    margin: 20px;
+    padding: 20px;
+    margin: 0 20px;
+    height: auto;
+}
+.art3 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin: auto;
+}
+.art3 h3{
+    padding: 20px;
+    text-transform: capitalize;
+}
+.art3 p{
+    text-align: start;
+    width: 100%;
+}
+
+

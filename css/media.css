@@ -1,0 +1,48 @@
+@media (max-width:700px) {
+    .allarticl1 ,.allartic2,.allartic3{
+        flex-direction: column;
+    }
+    .cent h1{
+        margin-bottom: 20px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #ffff;
+    }
+    .cent p{
+        color: white;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        word-break: break-all;
+    }
+    .cent button {
+        background-color: transparent;
+        border: 1px solid #ffff;
+        padding: 5px;
+        color: #fff;
+        font-size: 1rem;
+        text-transform: capitalize;
+        cursor: pointer;
+        position: relative;
+        transition: 0.5s ease 0s;
+    }
+    .cent button::after{
+        content: "";
+        display: none;
+    }
+    .cent button::before{
+        content: "";
+        display: none;
+    }
+    .art3 img ,.art1 img{
+        margin: 20px auto;
+    }
+   
+
+    .art3,.art2 ,.art1{
+        margin:20px auto;
+        text-align: center;
+
+    }
+
+    
+}
